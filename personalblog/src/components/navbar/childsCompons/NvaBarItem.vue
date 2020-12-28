@@ -57,16 +57,22 @@
 <style scoped>
   .nav-bar-item {
     display: flex;
-    align-items: center;
     font-size: 18px;
+    background: #66ffcc;
     width: 100%;
     height: 100%;
+  }
+  .nav-bar-item ul{
+     margin: 0 10%;
+    border-bottom:none;
+  }
+  .nav-bar-item a{
+    padding-bottom: 13px;
   }
 
   .nav-bar-item li {
     flex: 1;
     justify-content: space-around;
-    flex-wrap: nowrap;
 
     height: 50px;
     line-height: 50px;
@@ -76,6 +82,7 @@
 
   .child-item {
     width: 100% !important;
+    margin: 0 !important;
   }
 
   .child-item li:hover {
